@@ -1,0 +1,2 @@
+pyautogui==0.9.41
+pyserial==3.4
