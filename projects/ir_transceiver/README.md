@@ -1,0 +1,6 @@
+# Infrared Signal Transceiver
+This project allows you to store and re-transmit up to 10 IR signals. There are two modes which can be chosen with the switch: selection mode and signal mode. In selection mode, you use the two buttons to move a cursor and select a neopixel. In signal mode, button A will transmit the signal saved at that neopixel, and button B will wait for an incoming signal to store at that neopixel. Sometimes it will take a few attempts to successfully save a signal (probably due to interference), but it works.
+This project really pushes the boundaries of the CPX's RAM because of how many different components it uses. Even when compiled using [mpy-cross](https://github.com/adafruit/circuitpython/tree/master/mpy-cross), memory errors may occur if used extensively. This is also why I couldn't add a feature for saving signals to a file (believe me, I tried).
+
+### Requirements
+- [`adafruit_irremote`](https://github.com/adafruit/Adafruit_CircuitPython_IRRemote/) to be installed on the CPX.
